@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+   
+    <style>
+
+        body{
+            margin-left: 500px;
+        }
+
+          table{
+            border-collapse: collapse;
+            width: 300px;
+           text-align: center;
+        }
+         table tr{
+            height: 40px;
+        }
+
+        table tr button{
+            height: 30px;
+            color: brown;
+           background-color: rgb(218, 213, 167);
+        }
+
+         table tr td button:active{
+            transform: translateY(4px);
+            background-color: rgb(238, 202, 135);
+        }
+
+        
+    </style>
+     <script src="Lab52.js"></script>
+</head>
+<body>
+    <div class="khung">
+        <h3>DANH MỤC HÀNG HÓA</h3>
+        <div class="bang">
+            <table border="1">
+                <tr>
+                    <td>iPhone 9</td>
+                    <td>$2700</td>
+                    <td><button onclick="them(this)">Thêm</button></td>
+                </tr>
+    
+                <tr>
+                    <td>Samsung Star</td>
+                    <td>$1500</td>
+                    <td><button onclick="them(this)">Thêm</button></td>
+                </tr>
+    
+                <tr>
+                    <td>Nokia 2020</td>
+                    <td>$1200</td>
+                    <td><button onclick="them(this)">Thêm</button></td>
+                </tr>
+    
+                <tr>
+                    <td>Sony Xperia</td>
+                    <td>$1700</td>
+                    <td><button onclick="them(this)">Thêm</button></td>
+                </tr>
+                
+            </table>
+        </div>
+
+       <div>
+        <h3>GIỎ HÀNG CỦA BẠN</h3>
+        <table border="1" id="hienthi"></table>
+        <h3>
+            Tổng tiền :$<span id="tong">0</span>
+        </h3>
+       </div>
+    </div>
+
+    
+</body>
+</html>
